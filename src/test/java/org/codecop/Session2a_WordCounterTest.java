@@ -22,12 +22,14 @@ class Session2a_WordCounterTest {
     void shouldCountNumberOfWords() {
         WordCounter counter = new WordCounter("Keep the bar green to keep the code clean.");
         // TODO Check that 9, counter.numberOfWords().
+        assertEquals (9, counter.numberOfWords());
     }
 
     @Test
     void shouldVerifyContainmentOfWord() {
         WordCounter counter = new WordCounter("green bar green hat");
         // TODO Check that counter.containsWord("bar").
+        assertTrue(counter.containsWord("bar"));
     }
 
     @Test
